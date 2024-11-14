@@ -5,6 +5,9 @@ data:
       baseUrl: http://af70dc7e120184baf9783a8816b9334c-2038494241.us-east-1.elb.amazonaws.com
     backend:
       baseUrl: http://af70dc7e120184baf9783a8816b9334c-2038494241.us-east-1.elb.amazonaws.com
+      csp:
+        connect-src: ["'self'", 'http:', 'https:']
+        upgrade-insecure-requests: false
     techdocs:
       builder: 'local'
       generator:
