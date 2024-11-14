@@ -257,6 +257,7 @@ backstage:
   #     baseUrl: https://somedomain.tld
   # -- Generates ConfigMap and configures it in the Backstage pods
   appConfig:
+    baseUrl: http://localhost
     backend:
       csp:
         connect-src: ["'self'", 'http:', 'https:']
